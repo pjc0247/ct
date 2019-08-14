@@ -47,3 +47,7 @@ foreach (var c in rev.Changes)
 var revisions = player.Revisions;
 Console.WriteLine(revisions.Revision); // Revision No.
 ```
+
+Performance Consideration
+----
+`IObserved` objects do more stuffs for tracking changes. It's definetly slower than non-tracking objects. Please be aware of the performance and do not use this for heavily changing objects. 

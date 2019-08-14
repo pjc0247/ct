@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Newtonsoft.Json;
 using Oven;
 
 namespace ChangeTracker
@@ -35,6 +36,9 @@ namespace ChangeTracker
             player.Items.Add("SADF");
 
             Console.WriteLine(player.Items.HasChanges);
+
+            //var p = JsonConvert.DeserializeObject<Player>(@"{""Name:"": ""asdf""");
+            Console.WriteLine(JsonConvert.SerializeObject(player));
         }
     }
 }
