@@ -21,4 +21,7 @@ namespace Oven
     public interface IObservedCollection<T> : IObserved, ICollection<T>
     {
     }
+    public interface IObservedList<T> : IObserved, IList<T>
+    {
+    }
 }
