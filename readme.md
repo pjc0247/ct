@@ -29,12 +29,12 @@ player.Items.Add(item);
 player.HasChanges; // TRUE
 ```
 
-__Deep tracking__
+__Deep tracking (Tracking Graph)__
 ```cs
 player.ConfirmChanges();
 player.HasChanges; // FALSE
 
-item.Quantity = 15;
+player.Items[0].Quantity = 15;
 player.HasChanges; // TRUE
 ```
 
